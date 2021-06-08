@@ -7,15 +7,6 @@ import { Game } from "./components/Game";
 
 const Stack = createStackNavigator();
 
-const screenOptions = {
-  headerShown: false,
-  gestureEnabled: false,
-  transitionSpec: {
-    open: config,
-    close: config
-  }
-};
-
 const config = {
   animation: 'spring',
   config: {
@@ -24,9 +15,18 @@ const config = {
     mass: 3,
     overshootClamping: false,
     restDisplacementThreshold: 0.01,
-    restSpeedThreshold: 0.01
+    restSpeedThreshold: 0.01,
+  },
+};
+
+const screenOptions = {
+  headerShown: false,
+  // gestureEnabled: false,
+  transitionSpec: {
+    open: config,
+    close: config
   }
-}
+};
 
 export default function App() {
   return (

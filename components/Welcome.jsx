@@ -168,8 +168,7 @@ const styles = StyleSheet.create({
   menuContainer: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center",
-    
+    justifyContent: "center", 
   },
   button: {
     backgroundColor: "#444",
