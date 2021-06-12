@@ -8,7 +8,7 @@ import { Game } from "./components/Game";
 const Stack = createStackNavigator();
 
 const config = {
-  animation: 'spring',
+  animation: "spring",
   config: {
     stiffness: 1000,
     damping: 50,
@@ -24,8 +24,8 @@ const screenOptions = {
   // gestureEnabled: false,
   transitionSpec: {
     open: config,
-    close: config
-  }
+    close: config,
+  },
 };
 
 export default function App() {

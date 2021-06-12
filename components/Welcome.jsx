@@ -52,7 +52,7 @@ export const Welcome = ({ navigation }) => {
 
   const Logo = () => {
     return (
-      <Animated.View style={[styles.logoContainer, {display: displayLogo}]}>
+      <Animated.View style={[styles.logoContainer, { display: displayLogo }]}>
         <Image source={require("../assets/stackingXO.png")} />
         <Image source={require("../assets/brushline.png")} />
         <Image source={require("../assets/tictactoe.png")} />
@@ -62,7 +62,7 @@ export const Welcome = ({ navigation }) => {
 
   const Menu = () => {
     return (
-      <Animated.View style={[styles.menuContainer, {display: displayMenu}]}>
+      <Animated.View style={[styles.menuContainer, { display: displayMenu }]}>
         <TouchableOpacity
           style={styles.button}
           onPress={() => navigation.navigate("Game")}
@@ -89,11 +89,8 @@ export const Welcome = ({ navigation }) => {
           { backgroundColor: containerBackground },
         ]}
       >
-
-          <Logo />
-          <Menu />
-        
-
+        <Logo />
+        <Menu />
         <Animated.View
           style={[
             styles.circle,
@@ -168,7 +165,7 @@ const styles = StyleSheet.create({
   menuContainer: {
     flex: 1,
     alignItems: "center",
-    justifyContent: "center", 
+    justifyContent: "center",
   },
   button: {
     backgroundColor: "#444",
